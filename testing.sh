@@ -9,7 +9,7 @@ else
 
 fi
 
-ssh -l root ansible-master "cd /etc/ansible/; ansible-playbook -i hosts $1 -vv"
+ssh -l root ansible-master \\"cd /etc/ansible/; ansible-playbook -i hosts $1 -vv\\"
 
 
 echo "this is from the main branch"
