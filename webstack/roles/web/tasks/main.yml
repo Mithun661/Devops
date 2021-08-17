@@ -1,0 +1,12 @@
+---
+# tasks file for web
+- name: install apache packages
+  apt: name=mini-httpd state=present
+
+- name: copy apache index file
+  copy: 
+    src: index.html 
+    dest: /var/www/html/index.html
+  tags: apache
+  notify: restart apache service
+

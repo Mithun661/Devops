@@ -1,0 +1,6 @@
+[all]
+ansible-slave
+ansible-slave1
+
+[web]
+ansible-slave

@@ -1,0 +1,10 @@
+- hosts: all
+
+  tasks:
+   - name: create a file
+     copy: 
+       dest: "/root/from_ansible.txt"
+       content: |
+         this is coming from anisble
+         let see if it works
+         hope it works though
