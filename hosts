@@ -42,5 +42,10 @@
 
 #db-[99:101]-node.example.com
 [machine]
+<<<<<<< HEAD
 ansible-slave ansible_python_interpreter=/usr/bin/python3
 ansible-slave1 ansible_python_interpreter=/usr/bin/python3
+=======
+172.21.0.2 ansible_python_interpreter=/usr/bin/python3
+172.21.0.4 ansible_python_interpreter=/usr/bin/python3
+>>>>>>> 9ed9d3ca59981c2b78d55e4ebf34de045209a993

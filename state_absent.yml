@@ -1,0 +1,14 @@
+- hosts: all
+
+  tasks:
+   - name: edit the file with regex
+     tags: file change
+     lineinfile:
+       path: /root/from_ansible.txt
+       regexp: '^from.*'
+       
+       state: absent
+
+       backup: yes
+     
+     register: example1out

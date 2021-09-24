@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+  tasks:
+
+- name: apply common configuration
+  hosts: all
+  tasks:
+  roles:
+    - common
+
+- name: install and configure apache
+  hosts: web
+  tasks:
+  roles:
+    - web
